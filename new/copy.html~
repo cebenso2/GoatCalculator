@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The exact same bootstrap page everyone else makes.">
+    <meta name="author" content="Me, you, her, everyone, et al.">
+
+    <title>GOAT Calculator</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/css/bootstrap-slider.min.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type='text/css'>
+      /* Example 1 custom styles */
+      #ex1Slider .slider-selection {
+      background: #BABABA;
+      }
+      
+      /* Example 3 custom styles */
+      #RGB {
+      height: 20px;
+      background: rgb(128, 128, 128);
+      }
+      #RC .slider-selection {
+      background: #FF8282;
+      }
+      #RC .slider-handle {
+      dfgbackground: red;
+      }
+      #GC .slider-selection {
+      background: #428041;
+      }
+      #sl1 .slider-handle {
+      background: #f05f40;
+      }
+      #sl1 .slider-selection {
+      background: rgb(255, 165, 0);
+      }
+      #sl1 .slider-handle {
+      border-bottom-color: blue;
+      }
+      #sl1, #G, #B {
+      width: 80%;
+      }
+    </style>
+    
+</head>
+
+<body id="page-top">
+
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll">Goat Calculator</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+        	    <li>
+                        <a class="page-scroll" href="#about">Calculator</a>
+                    </li>
+	
+		  <li>
+                        <a class="page-scroll" href="#about">Forum</a>
+                    </li>
+	
+	        </ul>
+		<form class="navbar-form navbar-left">
+		  <div class="form-group">
+		    <input type="text" placeholder="Search for NBA Players" class="form-control">
+		  </div>
+		</form>
+                
+		<form class="navbar-form navbar-right">
+		  <div class="form-group">
+		    <input type="text" placeholder="Email" class="form-control">
+		  </div>
+		  <div class="form-group">
+		    <input type="password" placeholder="Password" class="form-control">
+		  </div>
+		  <button type="submit" class="btn btn-primary">Sign in</button>
+		  <button type="submit" class="btn btn-primary">Sign up</button>
+		</form>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+              <h1><font color="orange">Calculate the Greatest Player Of All Time</font></h1>
+              <p>Search for players, find your G.O.A.T, and discuss with others.<hr></p>
+	      
+	      <div class="well" style="background-color:black">
+		<b> Scoring</b>
+		<h4><input type="text" class="span2" data-slider-value="20" data-slider-id="sl1" id="sl1" data-slider-orientation="horizontal"  data-slider-min="0" data-slider-max="100">
+		  <span class="label label-primary" ID="filter">20</span></h4>
+	      	<b> Shooting</b>
+		<h4><input type="text" class="span2" data-slider-value="20" data-slider-id="sl1" id="sl2" data-slider-orientation="horizontal"  data-slider-min="0" data-slider-max="100">
+		  <span class="label label-primary" ID="filter1">20</span></h4>
+		<b> Defense</b>
+		<h4><input type="text" class="span2" data-slider-value="20" data-slider-id="sl1" id="sl3" data-slider-orientation="horizontal"  data-slider-min="0" data-slider-max="100">
+		  <span class="label label-primary" ID="filter">20</span></h4>
+		<b> Team</b>
+		<h4><input type="text" class="span2" data-slider-value="20" data-slider-id="sl1" id="sl4" data-slider-orientation="horizontal"  data-slider-min="0" data-slider-max="100">
+		  <span class="label label-primary" ID="filter">20</span></h4>
+		<b> Longevity</b>
+		<h4><input type="text" class="span2" data-slider-value="20" data-slider-id="sl1" id="sl5" data-slider-orientation="horizontal"  data-slider-min="0" data-slider-max="100">
+		  <span class="label label-primary" ID="filter">20</span></h4>
+		<div class="progress-bar" role="progressbar" aria-valuenow="70"
+		     aria-valuemin="0" aria-valuemax="100" style="width:70%">
+		  <span class="sr-only">70% Complete</span>
+		</div>
+		<p> test</>
+	      </div>
+	      
+
+	      <p><a href="#about" class="btn btn-primary btn-xl page-scroll">Calculate the G.O.A.T</a></p>	
+	
+	    </div>
+	    
+        </div>
+    </header>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/bootstrap-slider.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+    <script>
+      var filter_number = function() {
+       $('#filter').text(s.getValue())
+      };
+      var filter_number1 = function() {
+       $('#filter1').text(s1.getValue())
+      };
+      var s=$('#sl1').slider({
+          formater: function(value) {
+            return 'Current value: '+value;
+          }
+        }).on('slide', filter_number)
+      .data('slider');
+      var s1=$('#sl2').slider({
+      }).on('change', filter_number1)
+      .data('slider');
+
+     $('#sl3').slider({
+          formater: function(value) {
+            return 'Current value: '+value;
+          }
+        });
+      $('#sl4').slider({
+          formater: function(value) {
+            return 'Current value: '+value;
+          }
+        });
+    $('#sl5').slider({
+          formater: function(value) {
+            return 'Current value: '+value;
+          }
+        });
+    </script>
+</body>
+
+
+</html>

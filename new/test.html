@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chart.js demo</title>
+        <!-- import plugin script -->
+    </head>
+    <body>
+        <!-- bar chart canvas element -->
+        <canvas id="income" width="600" height="400"></canvas>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
+	<script>
+	  var data = {
+    labels: ["Scoring","Shooting", "Defense","Team", "Longevity"],
+    datasets: [
+        {
+          label: "My First dataset",
+          fillColor: "rgba(255,165,0,0.3)",
+	  strokeColor : "rgba(255,165,0,1)",
+	  data: [65, 59, 90, 81, 56]
+        }
+    ]
+};
+ var income = document.getElementById("income").getContext("2d"); 
+           new Chart(income).Radar(data);
+	</script>
+    </body>
+</html>

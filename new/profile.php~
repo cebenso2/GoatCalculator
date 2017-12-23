@@ -1,0 +1,228 @@
+<?php include('connect.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The exact same bootstrap page everyone else makes.">
+    <meta name="author" content="Me, you, her, everyone, et al.">
+
+    <title>GOAT Calculator</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/css/bootstrap-slider.min.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body id="page-top">
+    <?php include('navbar.html');?>
+    <?php $name=$_SESSION['username'];
+             $query = "SELECT * FROM users WHERE user_name='$name'";
+             $result=mysqli_query($db,$query);
+             $num=mysqli_num_rows($result);
+             $row = mysqli_fetch_assoc($result);
+if($row['Preference1']!=""){
+  $group=$row['Preference1'].' and '.$row['Preference2'];
+}
+else{
+  $group="Not Classified";
+}	      
+?>
+
+    <section id="services">
+      <div class="container">
+	
+	<h2 class="section-heading text-center"><font color="orange">Profile</font></h2>
+	<hr class="primary">
+	<div class="panel panel-default" style="background:#333;color:#FFF; border-color:#FFF;">
+	  <div class="panel-heading">
+	    <h3 class="panel-title"> Profile Details </h3>                                
+	  </div>
+	  <div class="panel-body">
+	    <div class="row">
+	      <div class="col-md-1"></div>
+	      <div class="col-md-4"> </br>
+		<div class="panel panel-default" style="background:#333;color:#FFF; border-color:#FFF;">
+		  <div class="panel-body">
+
+		    <p>Username: <font color="orange"><?php echo $row['user_name'];?></font></p>
+		    <p>First Name: <font color="orange"><?php echo $row['First_name'];?></font></p>
+		    <p>Last Name: <font color="orange"><?php echo $row['Last_name'];?></font></p>
+		    <p>Email: <font color="orange"><?php echo $row['Email'];?></font></p>
+		    <p>Favorite Player: <font color="orange"><?php echo $row['Favorite_player'];?></font></p>
+		    <p>Forum Group:<font color="orange"> <?php echo $group;?></font> </p>
+		  </div>
+		</div>
+	      </div>
+		    <?php $query = "SELECT avg(Shooting) as 'sh', avg(Scoring) as 's', avg(Defense) as 'd', avg(team) as 't',avg(longevity) as 'l'
+FROM `GoatHistory` 
+WHERE username='$name'";
+$result=mysqli_query($db,$query);
+$row = mysqli_fetch_assoc($result);
+$num=mysqli_num_rows($result);
+if($num>0 and $row['s']!=""){
+  $data= $row['s'].",".$row['sh'].",".$row['l'].",".$row['t'].",".$row['d'];
+}
+else{
+  $data='0,0,0,0,0';
+  
+}
+	       ?>
+
+		    
+
+	      <div class="col-md-7">
+		<canvas id="income"></canvas>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+		
+		<script>
+		  var data = {
+		  labels: ["Scoring","Shooting", "Longevity", "Defense","Team"],
+		  datasets: [{
+                           label: "My First dataset",
+                           fillColor: "rgba(255,165,0,0.3)",
+	                   strokeColor : "rgba(255,165,0,1)",
+	                   data: [<?php echo $data?>]
+	                }]
+		  };
+		  var options={responsive: true,
+	                   pointLabelFontColor:'#FFF',
+	                   pointLabelFontSize:12, 
+	                   angleLineColor:'#fff',
+	                   scaleLineColor : '#fff'
+		  }
+		  
+		  var income = document.getElementById("income").getContext("2d"); 
+		  Chart.defaults.global.defaultFontColor ='#FFF'
+		  new Chart(income).Radar(data,options);
+		</script>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+<?php
+$query = "select * from
+(Select Distinct Username as Un,  goat_name from GoatHistory) as B
+inner join
+`Basketball_Players`
+on `Basketball_Players`.player=B.goat_name
+where B.Un='$name'";
+$result=mysqli_query($db,$query);
+$num=mysqli_num_rows($result);
+?>
+      <div class="container" style="width:90%">
+	<div class="panel">
+	  <div class="panel-heading">
+	  <h3 class="panel-title"> GOAT History</h3>
+	  </div>
+	  <div class="table-responsive">
+     	    <table class="table table-inverse " style="color:#FFF; background:#333">
+	      <thead>
+		<tr>
+		  <th>Player</th>
+		  <th>Team</th> 
+		  <th>College</th>
+		  <th>Years Played</th>
+		  <th>Games</th>
+		  <th>Minutes Played</th>
+		  <th>Points</th>
+		  <th>Rebounds</th>
+		  <th>Assists</th>
+		  <th>FG%</th>
+		  <th>3P%</th>
+		  <th>FT%</th>
+		  <th>MPG</th>
+		  <th>PPG</th>
+		  <th>RBPG</th>
+		  <th>APG</th>
+		  <th>WS</th>
+		  <th>WS/48</th>
+		  <th>BPM</th>
+		  <th>VORP</th>
+		  <th> Information</th>
+		</tr>
+	      </thead>
+	      <tbody>
+		    <?php
+		    while($row = mysqli_fetch_assoc($result)){
+		      ?>
+
+		      <tr>
+		      <td><?php echo $row['Player']; ?></td>
+		      <td><?php echo $row['Team']; ?></td>
+		      <td><?php echo $row['College']; ?></td>
+		      <td><?php echo $row['Years Played']; ?></td>
+		      <td><?php echo $row['Games']; ?></td>
+		      <td><?php echo $row['Minutes Played']; ?></td>
+		      <td><?php echo $row['Points']; ?></td>
+		      <td><?php echo $row['Rebounds']; ?></td>
+		      <td><?php echo $row['Assists']; ?></td>
+		      <td><?php echo $row['FG_P']; ?></td>
+		      <td><?php echo $row['3P_P']; ?></td>
+		      <td><?php echo $row['FT_P']; ?></td>
+		      <td><?php echo $row['MPG']; ?></td>
+		      <td><?php echo $row['PPG']; ?></td>
+		      <td><?php echo $row['RBPG']; ?></td>
+		      <td><?php echo $row['APG']; ?></td>
+		      <td><?php echo $row['WS']; ?></td>
+		      <td><?php echo $row['WS_PER_48']; ?></td>
+		      <td><?php echo $row['BPM']; ?></td>
+		      <td><?php echo $row['VORP']; ?></td>
+		      <td><a target="_blank" style="color:red;"href="https://en.wikipedia.org/wiki/<?php echo str_replace(' ', '_',$row['Player']); ?>"> More Info </a></td>
+      
+		      </tr>
+
+		      <?php } ?>
+	      </tbody>
+	    </table>
+	  </div>
+	</div>
+      </div>
+      <div class="container">
+	<div class="center block">
+	  <a class="btn btn-primary btn-xl <?php if($num<5){echo disabled;}?>  center-block" href="recommender.php">Recommend me a G.O.A.T</a>
+	</div>
+      </div>
+    </section>
+    <?php include('help.html');?>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/bootstrap-slider.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+
+</html>

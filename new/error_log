@@ -1,0 +1,117 @@
+[20-Jun-2016 21:01:59 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home/cebenso2/public_html/test/big.php on line 2
+[20-Jun-2016 21:03:24 America/Chicago] PHP Warning:  include(common/header.html): failed to open stream: No such file or directory in /home/cebenso2/public_html/test/big.php on line 1
+[20-Jun-2016 21:03:24 America/Chicago] PHP Warning:  include(): Failed opening 'common/header.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/cebenso2/public_html/test/big.php on line 1
+[20-Jun-2016 21:28:45 America/Chicago] PHP Warning:  include(headerhtml): failed to open stream: No such file or directory in /home/cebenso2/public_html/test/temp.php on line 1
+[20-Jun-2016 21:28:45 America/Chicago] PHP Warning:  include(): Failed opening 'headerhtml' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/cebenso2/public_html/test/temp.php on line 1
+[11-Jul-2016 19:35:45 America/Chicago] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/goatcalculator/public_html/new/search.php on line 51
+[11-Jul-2016 19:35:45 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/goatcalculator/public_html/new/search.php on line 52
+[11-Jul-2016 19:35:45 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/goatcalculator/public_html/new/search.php on line 97
+[15-Jul-2016 00:30:54 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/goatcalculator/public_html/new/navbar.html on line 29
+[15-Jul-2016 00:31:07 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/goatcalculator/public_html/new/navbar.html on line 29
+[15-Jul-2016 01:13:02 America/Chicago] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE) in /home/goatcalculator/public_html/new/login.php on line 2
+[15-Jul-2016 01:13:37 America/Chicago] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE) in /home/goatcalculator/public_html/new/login.php on line 2
+[15-Jul-2016 01:13:43 America/Chicago] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE) in /home/goatcalculator/public_html/new/login.php on line 2
+[15-Jul-2016 01:14:01 America/Chicago] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE) in /home/goatcalculator/public_html/new/login.php on line 3
+[15-Jul-2016 01:14:07 America/Chicago] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE) in /home/goatcalculator/public_html/new/login.php on line 3
+[15-Jul-2016 01:14:18 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/login.php on line 12
+[15-Jul-2016 01:14:18 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/goatcalculator/public_html/new/login.php on line 12
+[15-Jul-2016 01:14:18 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/goatcalculator/public_html/new/login.php:12) in /home/goatcalculator/public_html/new/login.php on line 20
+[15-Jul-2016 01:14:59 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/login.php on line 13
+[15-Jul-2016 01:14:59 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/goatcalculator/public_html/new/login.php on line 13
+[15-Jul-2016 01:17:04 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/login.php on line 13
+[15-Jul-2016 01:17:04 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/goatcalculator/public_html/new/login.php on line 13
+[15-Jul-2016 01:17:17 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/login.php on line 13
+[15-Jul-2016 01:17:17 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/goatcalculator/public_html/new/login.php on line 13
+[15-Jul-2016 01:17:42 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/login.php on line 12
+[15-Jul-2016 01:17:42 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/goatcalculator/public_html/new/login.php on line 12
+[15-Jul-2016 01:17:42 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/goatcalculator/public_html/new/login.php:12) in /home/goatcalculator/public_html/new/login.php on line 20
+[15-Jul-2016 01:20:49 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/goatcalculator/public_html/new/login.php on line 22
+[15-Jul-2016 01:22:30 America/Chicago] PHP Parse error:  syntax error, unexpected 'header' (T_STRING), expecting ',' or ';' in /home/goatcalculator/public_html/new/login.php on line 21
+[15-Jul-2016 01:22:38 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/goatcalculator/public_html/new/login.php:20) in /home/goatcalculator/public_html/new/login.php on line 21
+[15-Jul-2016 01:24:37 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/goatcalculator/public_html/new/login.php:20) in /home/goatcalculator/public_html/new/login.php on line 21
+[15-Jul-2016 01:31:27 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/goatcalculator/public_html/new/navbar.html on line 29
+[15-Jul-2016 01:32:34 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/goatcalculator/public_html/new/navbar.html on line 29
+[15-Jul-2016 01:33:37 America/Chicago] PHP Fatal error:  Call to undefined function start_session() in /home/goatcalculator/public_html/new/index.php on line 1
+[15-Jul-2016 01:40:35 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/goatcalculator/public_html/new/logout.php on line 1
+[15-Jul-2016 01:40:35 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/goatcalculator/public_html/new/logout.php:1) in /home/goatcalculator/public_html/new/logout.php on line 2
+[15-Jul-2016 01:52:48 America/Chicago] PHP Parse error:  syntax error, unexpected '==' (T_IS_EQUAL) in /home/goatcalculator/public_html/new/navbar.html on line 30
+[15-Jul-2016 01:53:18 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/goatcalculator/public_html/new/navbar.html on line 30
+[15-Jul-2016 01:53:21 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/goatcalculator/public_html/new/navbar.html on line 30
+[15-Jul-2016 02:22:02 America/Chicago] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/goatcalculator/public_html/new/profile.php on line 40
+[15-Jul-2016 02:29:38 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/goatcalculator/public_html/new/profile.php on line 174
+[15-Jul-2016 02:41:47 America/Chicago] PHP Parse error:  syntax error, unexpected 'sh' (T_STRING) in /home/goatcalculator/public_html/new/profile.php on line 72
+[15-Jul-2016 02:42:20 America/Chicago] PHP Parse error:  syntax error, unexpected 'sh' (T_STRING) in /home/goatcalculator/public_html/new/profile.php on line 72
+[15-Jul-2016 02:42:27 America/Chicago] PHP Parse error:  syntax error, unexpected 'sh' (T_STRING) in /home/goatcalculator/public_html/new/profile.php on line 72
+[15-Jul-2016 02:42:27 America/Chicago] PHP Parse error:  syntax error, unexpected 'sh' (T_STRING) in /home/goatcalculator/public_html/new/profile.php on line 72
+[15-Jul-2016 03:36:55 America/Chicago] PHP Warning:  include(recommender_result.php): failed to open stream: No such file or directory in /home/goatcalculator/public_html/new/recommender.php on line 61
+[15-Jul-2016 03:36:55 America/Chicago] PHP Warning:  include(): Failed opening 'recommender_result.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/goatcalculator/public_html/new/recommender.php on line 61
+[15-Jul-2016 03:37:57 America/Chicago] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/goatcalculator/public_html/new/recommender_results.php on line 4
+[15-Jul-2016 03:47:19 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/recommender_results.php on line 247
+[15-Jul-2016 03:48:15 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/recommender_results.php on line 247
+[15-Jul-2016 03:54:08 America/Chicago] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE), expecting ',' or ';' in /home/goatcalculator/public_html/new/recommender_results.php on line 247
+[15-Jul-2016 03:59:06 America/Chicago] PHP Parse error:  syntax error, unexpected '[', expecting '(' in /home/goatcalculator/public_html/new/recommender_results.php on line 245
+[15-Jul-2016 03:59:59 America/Chicago] PHP Parse error:  syntax error, unexpected '"')"' (T_CONSTANT_ENCAPSED_STRING) in /home/goatcalculator/public_html/new/recommender_results.php on line 245
+[15-Jul-2016 04:00:30 America/Chicago] PHP Parse error:  syntax error, unexpected '")"' (T_CONSTANT_ENCAPSED_STRING) in /home/goatcalculator/public_html/new/recommender_results.php on line 245
+[15-Jul-2016 04:00:50 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/recommender_results.php on line 247
+[15-Jul-2016 22:35:52 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home/goatcalculator/public_html/new/goat.php on line 50
+[15-Jul-2016 22:46:35 America/Chicago] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in /home/goatcalculator/public_html/new/goat.php on line 143
+[15-Jul-2016 22:46:44 America/Chicago] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in /home/goatcalculator/public_html/new/goat.php on line 143
+[15-Jul-2016 23:30:23 America/Chicago] PHP Parse error:  syntax error, unexpected '$shooting' (T_VARIABLE) in /home/goatcalculator/public_html/new/goat_results.php on line 6
+[15-Jul-2016 23:31:01 America/Chicago] PHP Parse error:  syntax error, unexpected '$shooting' (T_VARIABLE) in /home/goatcalculator/public_html/new/goat_results.php on line 6
+[15-Jul-2016 23:32:12 America/Chicago] PHP Parse error:  syntax error, unexpected '$shooting' (T_VARIABLE) in /home/goatcalculator/public_html/new/goat_results.php on line 6
+[15-Jul-2016 23:51:50 America/Chicago] PHP Warning:  mysql_data_seek() expects parameter 1 to be resource, object given in /home/goatcalculator/public_html/new/goat_results.php on line 41
+[16-Jul-2016 00:24:07 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat_results.php on line 33
+[16-Jul-2016 00:24:07 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat_results.php on line 34
+[16-Jul-2016 00:24:07 America/Chicago] PHP Warning:  mysqli_data_seek() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat_results.php on line 41
+[16-Jul-2016 00:24:07 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat.php on line 125
+[16-Jul-2016 00:24:45 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat_results.php on line 33
+[16-Jul-2016 00:24:45 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat_results.php on line 34
+[16-Jul-2016 00:24:45 America/Chicago] PHP Warning:  mysqli_data_seek() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat_results.php on line 41
+[16-Jul-2016 00:24:45 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat.php on line 125
+[16-Jul-2016 00:25:47 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat_results.php on line 33
+[16-Jul-2016 00:25:47 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat_results.php on line 34
+[16-Jul-2016 00:25:47 America/Chicago] PHP Warning:  mysqli_data_seek() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat_results.php on line 41
+[16-Jul-2016 00:25:47 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat.php on line 125
+[16-Jul-2016 22:50:35 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/goatcalculator/public_html/new/profile.php on line 88
+[16-Jul-2016 22:54:43 America/Chicago] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE) in /home/goatcalculator/public_html/new/profile.php on line 89
+[16-Jul-2016 22:55:18 America/Chicago] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE) in /home/goatcalculator/public_html/new/profile.php on line 90
+[16-Jul-2016 23:07:22 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home/goatcalculator/public_html/new/goat_results.php on line 105
+[16-Jul-2016 23:08:32 America/Chicago] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/goat_results.php on line 86
+[16-Jul-2016 23:08:32 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/goatcalculator/public_html/new/goat_results.php on line 86
+[16-Jul-2016 23:08:32 America/Chicago] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/goatcalculator/public_html/new/goat_results.php on line 87
+[16-Jul-2016 23:08:32 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/goat_results.php on line 97
+[16-Jul-2016 23:08:32 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/goatcalculator/public_html/new/goat_results.php on line 97
+[16-Jul-2016 23:08:32 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/goat_results.php on line 98
+[16-Jul-2016 23:08:32 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/goatcalculator/public_html/new/goat_results.php on line 98
+[16-Jul-2016 23:08:32 America/Chicago] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/goat_results.php on line 100
+[16-Jul-2016 23:08:32 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/goatcalculator/public_html/new/goat_results.php on line 100
+[16-Jul-2016 23:08:53 America/Chicago] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/goat_results.php on line 86
+[16-Jul-2016 23:08:53 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/goatcalculator/public_html/new/goat_results.php on line 86
+[16-Jul-2016 23:08:53 America/Chicago] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/goatcalculator/public_html/new/goat_results.php on line 87
+[16-Jul-2016 23:08:53 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/goat_results.php on line 97
+[16-Jul-2016 23:08:53 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/goatcalculator/public_html/new/goat_results.php on line 97
+[16-Jul-2016 23:08:53 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/goat_results.php on line 98
+[16-Jul-2016 23:08:53 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/goatcalculator/public_html/new/goat_results.php on line 98
+[16-Jul-2016 23:08:53 America/Chicago] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in /home/goatcalculator/public_html/new/goat_results.php on line 100
+[16-Jul-2016 23:08:53 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/goatcalculator/public_html/new/goat_results.php on line 100
+[16-Jul-2016 23:13:39 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/goatcalculator/public_html/new/goat.php on line 127
+[16-Jul-2016 23:16:24 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/goatcalculator/public_html/new/goat_results.php on line 33
+[16-Jul-2016 23:16:24 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/goatcalculator/public_html/new/goat_results.php on line 34
+[16-Jul-2016 23:16:24 America/Chicago] PHP Warning:  mysqli_data_seek() expects parameter 1 to be mysqli_result, null given in /home/goatcalculator/public_html/new/goat_results.php on line 42
+[23-Apr-2017 19:34:04 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:40:59 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:41:16 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:41:22 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:41:26 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:41:29 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:41:30 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:41:39 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:42:06 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:45:52 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:45:54 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:45:55 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:50:05 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:52:09 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[28-Apr-2017 17:52:15 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[23-Oct-2017 05:45:46 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[23-Oct-2017 05:45:57 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
